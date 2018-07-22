@@ -10,7 +10,7 @@ RUN set -x && \
       git \
       wget \
 
-RUN wget -qO - https://apt.z.cash/zcash.asc
+RUN wget https://apt.z.cash/zcash.asc
 RUN apt-key add rabbitmq-signing-key-public.asc
 RUN echo "deb [arch=amd64] https://apt.z.cash/ jessie main" | tee /etc/apt/sources.list.d/zcash.list \
 RUN set -x && \
