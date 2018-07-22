@@ -9,9 +9,9 @@ RUN set -x && \
       apt-transport-https \
       git \
       wget \
-    rm -rf /var/lib/apt/lists/*
-    wget -qO - https://apt.z.cash/zcash.asc | sudo apt-key add -
-    echo "deb [arch=amd64] https://apt.z.cash/ jessie main" | sudo tee /etc/apt/sources.list.d/zcash.list
+    rm -rf /var/lib/apt/lists/* \
+    wget -qO - https://apt.z.cash/zcash.asc | sudo apt-key add - \
+    echo "deb [arch=amd64] https://apt.z.cash/ jessie main" | sudo tee /etc/apt/sources.list.d/zcash.list \
     apt-get update && \
     apt-get -y install \
       zcash \
