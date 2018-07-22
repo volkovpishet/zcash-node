@@ -6,3 +6,4 @@ services:
     image: zcash:latest
     volumes:
      - ./data:/zcash/data
+    restart: always
