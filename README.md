@@ -1,4 +1,5 @@
 # ez-docker-zcash
+The project is forked from https://github.com/vtorhonen/ez-docker-zcash
 
 This just might be the easiest way to get a Zcash node/wallet running!
 
