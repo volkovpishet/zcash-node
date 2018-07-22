@@ -9,7 +9,6 @@ RUN set -x && \
       apt-transport-https \
       git \
       wget \
-    rm -rf /var/lib/apt/lists/* \
 
 RUN wget -qO - https://apt.z.cash/zcash.asc
 RUN apt-key add rabbitmq-signing-key-public.asc
