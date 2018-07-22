@@ -16,7 +16,6 @@ RUN set -x && \
     apt-get -y install \
       zcash \
 
-# do Sprout proving
 RUN set -x && \
     bash zcash-fetch-params
 
