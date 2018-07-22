@@ -18,6 +18,14 @@ RUN set -x && \
       zcash \
 
 RUN set -x && \
+    wget -qO - https://apt.z.cash/zcash.asc
+    apt-key add zcash.asc
+    echo "deb [arch=amd64] https://apt.z.cash/ jessie main" | tee /etc/apt/sources.list.d/zcash.list \
+    apt-get update && \
+    apt-get -y install \
+      zcash \
+
+RUN set -x && \
     bash zcash-fetch-params
 
 # create dirs
