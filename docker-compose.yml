@@ -1,8 +1,8 @@
 version: '3'
 services:
   zcash:
-  	tty: true
-  	volumes:
-     - ./data:/zcash/data
+    tty: true
     build: .
     image: zcash:latest
+    volumes:
+     - ./data:/zcash/data
