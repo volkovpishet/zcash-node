@@ -10,8 +10,8 @@ RUN set -x && \
       git \
       wget \
     rm -rf /var/lib/apt/lists/* \
-    wget -qO - https://apt.z.cash/zcash.asc | sudo apt-key add - \
-    echo "deb [arch=amd64] https://apt.z.cash/ jessie main" | sudo tee /etc/apt/sources.list.d/zcash.list \
+    wget -qO - https://apt.z.cash/zcash.asc | apt-key add - \
+    echo "deb [arch=amd64] https://apt.z.cash/ jessie main" | tee /etc/apt/sources.list.d/zcash.list \
     apt-get update && \
     apt-get -y install \
       zcash \
