@@ -95,3 +95,9 @@ $ ./zcash-cli.sh getbalance
 # Backing up your wallet
 
 Your data directory is super important. Take backups by following [instructions from Zcash documentation](https://github.com/zcash/zcash/blob/master/doc/wallet-backup.md).
+
+# Create new "t" destination
+ ./zcash-cli.sh getnewaddress
+
+# List all "t" destinations
+./zcash-cli.sh listreceivedbyaddress 0 true
