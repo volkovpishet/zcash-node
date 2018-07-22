@@ -1,0 +1,8 @@
+version: '3'
+services:
+  zcash:
+  	tty: true
+  	volumes:
+     - ./data:/zcash/data
+    build: .
+    image: zcash:latest
