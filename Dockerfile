@@ -7,8 +7,8 @@ RUN set -x && \
     apt-get update && \
     apt-get -y install apt-transport-https wget
 
-RUN wget https://apt.z.cash/zcash.asc && apt-key add rabbitmq-signing-key-public.asc
-RUN echo "deb [arch=amd64] https://apt.z.cash/ jessie main" | tee /etc/apt/sources.list.d/zcash.list \
+RUN wget https://apt.z.cash/zcash.asc && apt-key add zcash.asc
+RUN echo "deb [arch=amd64] https://apt.z.cash/ jessie main" | tee /etc/apt/sources.list.d/zcash.list
 RUN set -x && \
     apt-get update && \
     apt-get -y install zcash
